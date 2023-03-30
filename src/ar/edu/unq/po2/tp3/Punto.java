@@ -4,6 +4,7 @@ public class Punto {
 
 	private float x;
 	private float y;
+	private float z;
 	
 	public Punto(float x, float y) {
 		super();
