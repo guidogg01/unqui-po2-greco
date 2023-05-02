@@ -1,10 +1,9 @@
-package ar.edu.unq.po2.tp3;
+package ar.edu.unq.po2.tps;
 
 public class Punto {
 
 	private float x;
 	private float y;
-	private float z;
 	
 	public Punto(float x, float y) {
 		super();
@@ -31,7 +30,5 @@ public class Punto {
 	public void setY(float y) {
 		this.y = y;
 	}
-	
-	
-	
+		
 }
