@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7.Mockito;
+package ar.edu.unq.po2.tp7.MockitoConJugadas;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -72,19 +72,19 @@ class PokerStatusTestCase {
 	void testCuandoHayColor(){
 		//SetUp/Mockeando
 		
-		when(carta1.getValor()).thenReturn(Valor.SEIS);   //Dummy
+		when(carta1.getValor()).thenReturn(Valor.SEIS); //Dummy
 		when(carta1.getPalo()).thenReturn(Palo.DIAMANTE); //Dummy
 
-		when(carta2.getValor()).thenReturn(Valor.OCHO);   //Dummy
+		when(carta2.getValor()).thenReturn(Valor.OCHO); //Dummy
 		when(carta2.getPalo()).thenReturn(Palo.DIAMANTE); //Dummy
 				
-		when(carta3.getValor()).thenReturn(Valor.J);      //Dummy
+		when(carta3.getValor()).thenReturn(Valor.J); //Dummy
 		when(carta3.getPalo()).thenReturn(Palo.DIAMANTE); //Dummy
 				
-		when(carta4.getValor()).thenReturn(Valor.CINCO);  //Dummy
+		when(carta4.getValor()).thenReturn(Valor.CINCO); //Dummy
 		when(carta4.getPalo()).thenReturn(Palo.DIAMANTE); //Dummy
 				
-		when(carta5.getValor()).thenReturn(Valor.A);      //Dummy
+		when(carta5.getValor()).thenReturn(Valor.A); //Dummy
 		when(carta5.getPalo()).thenReturn(Palo.DIAMANTE); //Dummy
 		
 		String stringEsperado = "Color";

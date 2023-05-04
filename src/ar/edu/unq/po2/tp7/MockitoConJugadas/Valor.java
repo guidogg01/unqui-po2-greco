@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7;
+package ar.edu.unq.po2.tp7.MockitoConJugadas;
 
 public enum Valor {
 
@@ -8,6 +8,7 @@ public enum Valor {
 	
 	private Valor(){
 	}
+
 
 	private Valor(int valorEnNumero) {
 		this.valorEnNumero = valorEnNumero;

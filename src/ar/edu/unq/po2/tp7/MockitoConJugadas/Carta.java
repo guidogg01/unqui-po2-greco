@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7;
+package ar.edu.unq.po2.tp7.MockitoConJugadas;
 
 public class Carta {
 
@@ -26,5 +26,6 @@ public class Carta {
 	public void setPalo(Palo palo) {
 		this.palo = palo;
 	}
+	
 	
 }

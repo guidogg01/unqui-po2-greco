@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7.Mockito;
+package ar.edu.unq.po2.tp7.MockitoConJugadas;
 
 import java.util.ArrayList;
 
@@ -21,6 +21,7 @@ public class PokerStatus {
 		//Estos se agregan para contemplar los casos de trio.
 		int cantCartasDelMismoNumero2 = manoDePoker.stream().filter(c -> carta2.getValor().equals(c.getValor())).toList().size();
 		int cantCartasDelMismoNumero3 = manoDePoker.stream().filter(c -> carta3.getValor().equals(c.getValor())).toList().size();
+		// En el filter se pone "s" porque son un string pero podría ser carta.
 		//Color
 		int cantCartasDelMismoPalo  = manoDePoker.stream().filter(c -> carta1.getPalo().equals(c.getPalo())).toList().size();
 		
