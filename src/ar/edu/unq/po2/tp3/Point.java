@@ -51,12 +51,13 @@ public class Point {
 		
 	}
 	
-	public Point sumarPuntos(Point otherPoint) {
+	public void sumarPuntos(Point otherPoint) {
 		
 		 int nuevaCoordenadaX = this.x+otherPoint.getX();
 		 int nuevaCoordenadaY = this.y+otherPoint.getY();
 		 
-		 return new Point(nuevaCoordenadaX, nuevaCoordenadaY);
+		 this.setX(nuevaCoordenadaX);
+		 this.setY(nuevaCoordenadaY);
 		 
 	}
 	

@@ -27,20 +27,20 @@ class PointTestCase {
 	@Test
 	void testMoverPunto() {
 
-		Point nuevaPosiciónDePunto = punto1.moverPunto(3, 8);
+		punto1.moverPunto(3, 8);
 		
-		assertEquals(8, nuevaPosiciónDePunto.getY());
+		assertEquals(8, punto1.getY());
 		
 	}
 	
 	@Test
 	void testSumarPuntos() {
 
-		Point nuevaPosiciónDePunto = punto1.moverPunto(3, 8);
+		punto1.moverPunto(3, 8);
 		
-		Point nuevoPunto = nuevaPosiciónDePunto.sumarPuntos(punto2);
+		punto1.sumarPuntos(punto2);
 		
-		assertEquals(14, nuevoPunto.getY());
+		assertEquals(14, punto1.getY());
 		
 	}
 

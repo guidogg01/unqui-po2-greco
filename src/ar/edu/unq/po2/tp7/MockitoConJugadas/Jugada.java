@@ -31,7 +31,7 @@ public class Jugada {
 	
 	public ArrayList<Carta> jugadaGanadora(){
 		
-		
+		return null;
 		
 	}
 	
