@@ -14,7 +14,7 @@ public class Point {
 
 
 
-	Point(int x, int y) {
+	public Point(int x, int y) {
 		super();
 		this.x = x;
 		this.y = y;
@@ -44,12 +44,10 @@ public class Point {
 		this.y = y;
 	}
 	
-	public Point moverPunto(int z, int k) {
+	public void moverPunto(int z, int k) {
 		
-		int nuevaCoordenadaX = z;
-		int nuevaCoordenadaY = k;
-		 
-		return new Point(nuevaCoordenadaX, nuevaCoordenadaY);
+		this.setX(z);
+		this.setY(k);
 		
 	}
 	
