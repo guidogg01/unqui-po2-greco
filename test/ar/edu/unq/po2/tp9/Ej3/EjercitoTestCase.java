@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import ar.edu.unq.po2.tp3.Point;
 
-class PersonajeTestCase {
+class EjercitoTestCase {
 
 	private Ejercito ejercito1;
 	
@@ -22,6 +22,7 @@ class PersonajeTestCase {
 		
 		ejercito1 = new Ejercito();
 		
+		ingeniero1 = new Ingeniero();
 		caballero1 = new Caballero();
 		
 		ejercito1.agregarPersonaje(ingeniero1);
@@ -32,15 +33,14 @@ class PersonajeTestCase {
 	}
 	
 	@Test
-	void testCuandoCaminaElCaballero() {
+	void testCuandoCaminaElEjercito() {
 		
 		when(punto1.getX()).thenReturn(2);
 		when(punto1.getY()).thenReturn(4);
 		
-		caballero1.desplazarse(punto1);
+		ejercito1.desplazarse(punto1);
 		
-		assertEquals(2, caballero1.getUbicacionEnEjeX()); //PREGUNTAR LO DEL SPY.
+		assertEquals(2, ejercito1.getUbicacionEnEjeX()); //PREGUNTAR LO DEL SPY.
 		
 	}
-
 }

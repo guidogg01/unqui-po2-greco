@@ -18,10 +18,10 @@ public interface FyleSystem{
 	/**
 	* Elemento mas nuevo
 	*/
-	public XXXXXXXXX lastModified();
+	public Documento lastModified();
 	
 	/** Elemento mas antiguo
 	*/
-	public XXXXXXXX oldestElement();
+	public Documento oldestElement();
 
 }

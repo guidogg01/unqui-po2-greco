@@ -31,5 +31,9 @@ public class Ejercito extends Personaje{
 	public void agregarPersonaje(Personaje personaje) {
 		this.getPersonajes().add(personaje);
 	}
+
+	public int getUbicacionEnEjeX() {
+		return this.getUbicacion().getX();
+	}
 		
 }

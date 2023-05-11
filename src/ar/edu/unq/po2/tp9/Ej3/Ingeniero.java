@@ -7,6 +7,10 @@ public class Ingeniero extends Personaje{
 	@Override
 	public void desplazarse(Point punto) {
 		this.getUbicacion().moverPunto(punto.getX(), punto.getY());
-	}	
+	}
+
+	public int getUbicacionEnEjeX() {
+		return this.getUbicacion().getX();
+	}
 	
 }

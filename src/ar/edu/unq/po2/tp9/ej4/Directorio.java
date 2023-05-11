@@ -53,15 +53,15 @@ public class Directorio implements FyleSystem{
 		// TODO Auto-generated method stub
 		
 	}
-
+	
 	@Override
-	public XXXXXXXXX lastModified() {
+	public Documento lastModified() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public XXXXXXXX oldestElement() {
+	public Documento oldestElement() {
 		// TODO Auto-generated method stub
 		return null;
 	}
