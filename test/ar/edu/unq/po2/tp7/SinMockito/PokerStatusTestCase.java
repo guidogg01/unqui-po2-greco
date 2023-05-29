@@ -1,9 +1,14 @@
-package ar.edu.unq.po2.tp7;
+package ar.edu.unq.po2.tp7.SinMockito;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp7.SinMockito.Carta;
+import ar.edu.unq.po2.tp7.SinMockito.Palo;
+import ar.edu.unq.po2.tp7.SinMockito.PokerStatus;
+import ar.edu.unq.po2.tp7.SinMockito.Valor;
 
 class PokerStatusTestCase {
 

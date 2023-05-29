@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp9.ej4;
+package ar.edu.unq.po2.tp9.Ej4;
 
 public interface Documento {
 
