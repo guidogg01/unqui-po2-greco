@@ -6,7 +6,6 @@ public class MaquinaDeVideoJuegos {
 	private EstadoDeJuego estadoDeJuego;
 	
 	MaquinaDeVideoJuegos() {
-		super();
 		this.setCantFichasIngresadas(0);
 		this.setEstadoDeJuego(new EstadoInicialDeJuego(this));
 	}

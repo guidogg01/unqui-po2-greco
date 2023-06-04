@@ -22,14 +22,23 @@ class ParcelaMixtaTestCase {
 		parcelaPura1 = mock(ParcelaPura.class);
 		parcelaPura2 = mock(ParcelaPura.class);
 		parcelaPura3 = mock(ParcelaPura.class);
+
+	}
+	
+	@Test
+	void verificacionDeInicializacionDeUnaParcelaMixta() {
 		
-		parcelaMixta1.agregarParcela(parcelaPura1);
-		parcelaMixta1.agregarParcela(parcelaPura2);
-		parcelaMixta1.agregarParcela(parcelaPura3);
+		assertTrue(parcelaMixta1.getParcelas().isEmpty());
+		
 	}
 	
 	@Test
 	void testCostoAnualDeParcelaMixta() {
+		
+		//SetUp
+		parcelaMixta1.agregarParcela(parcelaPura1);
+		parcelaMixta1.agregarParcela(parcelaPura2);
+		parcelaMixta1.agregarParcela(parcelaPura3);
 		
 		when(parcelaPura1.gananciasAnuales()).thenReturn(500d);
 		when(parcelaPura2.gananciasAnuales()).thenReturn(300d);

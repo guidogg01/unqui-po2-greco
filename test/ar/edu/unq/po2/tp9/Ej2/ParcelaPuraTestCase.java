@@ -16,8 +16,6 @@ class ParcelaPuraTestCase {
 	
 	@BeforeEach
 	void setUp() {
-
-		parcelaPura1 = mock(ParcelaPura.class);
 		
 		soja1        = mock(Soja.class);
 		trigo1       = mock(Trigo.class);
@@ -31,7 +29,7 @@ class ParcelaPuraTestCase {
 		
 		parcelaPura1 = new ParcelaPura(soja1);
 		
-		assertEquals(500, parcelaPura1.gananciasAnuales());
+		assertEquals(500d, parcelaPura1.gananciasAnuales());
 		
 	}
 	
@@ -42,7 +40,7 @@ class ParcelaPuraTestCase {
 		
 		parcelaPura1 = new ParcelaPura(trigo1);
 		
-		assertEquals(300, parcelaPura1.gananciasAnuales());
+		assertEquals(300d, parcelaPura1.gananciasAnuales());
 		
 	}
 
