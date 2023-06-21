@@ -22,7 +22,7 @@ public class MaquinaDeVideoJuegos {
 		return estadoDeJuego;
 	}
 
-	// Este setter es public ya que cada estado (de IEstadoDeJuego)
+	// Este setter es public ya que cada estado (de EstadoDeJuego)
 	// modifica el estado interno del juego de la maquina de video juegos. 
 	public void setEstadoDeJuego(EstadoDeJuego estadoDeJuego) {
 		this.estadoDeJuego = estadoDeJuego;

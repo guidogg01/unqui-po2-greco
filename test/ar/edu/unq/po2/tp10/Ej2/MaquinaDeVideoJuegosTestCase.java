@@ -20,10 +20,10 @@ class MaquinaDeVideoJuegosTestCase {
 	void verificacionDeInicializacionDeUnaMaquinaDeVideoJuegos() {
 		//SetUp
 		int cantDeFichasEsperada = 0;
-		String estadoEsperado = "Ingresar fichas"; //Cuando una maquina recien se crea espera las fichas a ingresar.
+		String estadoEsperado    = "Ingresar fichas"; //Cuando una maquina recien se crea espera las fichas a ingresar.
 		
 		assertEquals(cantDeFichasEsperada, this.maquina.getCantFichasIngresadas());
-		assertEquals(estadoEsperado, this.maquina.presionarBotonDeInicio());
+		assertEquals(estadoEsperado,       this.maquina.presionarBotonDeInicio());
 		
 	}
 
@@ -32,14 +32,14 @@ class MaquinaDeVideoJuegosTestCase {
 		//SetUp
 		
 		int cantDeFichasEsperada = 1;
-		String estadoEsperado = "Se está iniciando el modo single player";
+		String estadoEsperado    = "Se está iniciando el modo single player";
 		
-		//Excersice
+		//Exercise
 		
-		maquina.ingresarFicha();
+		this.maquina.ingresarFicha();
 		
 		assertEquals(cantDeFichasEsperada, this.maquina.getCantFichasIngresadas());
-		assertEquals(estadoEsperado, this.maquina.presionarBotonDeInicio());
+		assertEquals(estadoEsperado,       this.maquina.presionarBotonDeInicio());
 		
 	}
 	
@@ -48,15 +48,15 @@ class MaquinaDeVideoJuegosTestCase {
 		//SetUp
 		
 		int cantDeFichasEsperada = 2;
-		String estadoEsperado = "Se está iniciando el modo multiPlayer";
+		String estadoEsperado    = "Se está iniciando el modo multiPlayer";
 		
-		//Excersice
+		//Exercise
 		
-		maquina.ingresarFicha();
-		maquina.ingresarFicha();
+		this.maquina.ingresarFicha();
+		this.maquina.ingresarFicha();
 		
 		assertEquals(cantDeFichasEsperada, this.maquina.getCantFichasIngresadas());
-		assertEquals(estadoEsperado, this.maquina.presionarBotonDeInicio());
+		assertEquals(estadoEsperado,       this.maquina.presionarBotonDeInicio());
 		
 	}
 	

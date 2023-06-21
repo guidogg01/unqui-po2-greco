@@ -4,7 +4,7 @@ public abstract class EstadoDeJuego {
 
 	private MaquinaDeVideoJuegos maquina;
 	
-	// Se instancia la clase abstracto ya que las clases hijas de esta clase
+	// Se instancia la clase abstracta ya que las clases hijas de esta clase
 	// van a tener este constrcutor. Por lo tanto, en vez de crear este constructor
 	// para cada clase hija, se hace solamente acá y ya está.
 	EstadoDeJuego(MaquinaDeVideoJuegos maquina) {
