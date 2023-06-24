@@ -60,7 +60,7 @@ public class Empresa {
 	
 	// Propósito: Determina el costo total que se debe abonar por los materiales 
 	public double pagarMateriales() {
-		return this.getMetodoDePago().abonarMateriales(this);
+		return this.getMetodoDePago().pagarActividad(this.getActividad());
 	}
 	
 }

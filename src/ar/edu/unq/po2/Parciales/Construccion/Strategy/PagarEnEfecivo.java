@@ -1,12 +1,12 @@
 package ar.edu.unq.po2.Parciales.Construccion.Strategy;
 
-import ar.edu.unq.po2.Parciales.Construccion.Empresa;
+import ar.edu.unq.po2.Parciales.Construccion.Composite.Actividad;
 
-public class PagarEnEfecivo implements MetodoDePago{
+public class PagarEnEfecivo implements MetodoDePago {
 
 	@Override
-	public double abonarMateriales(Empresa empresa) {
-		return 0;
+	public double pagarActividad(Actividad actividad) {
+		return actividad.costoTotal();
 	}
 
 }
