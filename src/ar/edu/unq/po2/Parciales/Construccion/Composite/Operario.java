@@ -1,15 +1,12 @@
 package ar.edu.unq.po2.Parciales.Construccion.Composite;
 
-import java.util.List;
-
-public class Operario extends Obra{
+public class Operario {
 
 	private int cantHorasTrabajadas;
 	private double valorPorhora;
 	private int antiguedad;
 
-	Operario(List<Operario> operarios, List<Material> materiales, int cantHoras, double valorPorhora, int antiguedad) {
-		super(operarios, materiales);
+	Operario(int cantHoras, double valorPorhora, int antiguedad) {
 		this.setCantHorasTrabajadas(cantHoras);
 		this.setValorPorhora(valorPorhora);
 		this.setAntiguedad(antiguedad);
