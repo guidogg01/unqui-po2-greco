@@ -104,7 +104,7 @@ public class PlanDeAhorro {
 	}
 	
 	public int cantCuotasPendientes() {
-		return 0; // Habría que hacer un select.
+		return this.getCantCuotas() - this.getCantCuotasPagadas();
 	}
 	
 }

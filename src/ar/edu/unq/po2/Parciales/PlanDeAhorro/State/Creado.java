@@ -16,8 +16,8 @@ public class Creado extends EstadoPlanDeAhorro {
 	}
 	
 	@Override
-	public boolean esCreada() {
-		return true;
+	public boolean noEsCreada() {
+		return false;
 	}
 	
 	public void setRetribucion(RetribucionStrategy retribucion) {

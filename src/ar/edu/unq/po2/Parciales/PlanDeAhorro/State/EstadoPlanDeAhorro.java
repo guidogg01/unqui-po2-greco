@@ -23,8 +23,8 @@ public abstract class EstadoPlanDeAhorro {
 	
 	public abstract void pagarCuota();
 	
-	public boolean esCreada() {
-		return false;
+	public boolean noEsCreada() {
+		return true;
 	}
 	
 }

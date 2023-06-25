@@ -3,11 +3,13 @@ package ar.edu.unq.po2.tp11.ej2;
 public class Temporario extends Empleado {
 
 	private int cantHorasTrabajadas;
+	private boolean tieneHijos;
 	private boolean estaCasado;
 
-	Temporario(int cantHorasTrabajadas, boolean estaCasado) {
+	Temporario(int cantHorasTrabajadas, boolean tieneHijos, boolean estaCasado) {
 		super();
 		this.cantHorasTrabajadas = cantHorasTrabajadas;
+		this.tieneHijos = tieneHijos;
 		this.estaCasado = estaCasado;
 	}
 
@@ -19,6 +21,14 @@ public class Temporario extends Empleado {
 		this.cantHorasTrabajadas = cantHorasTrabajadas;
 	}
 
+	public boolean isTieneHijos() {
+		return tieneHijos;
+	}
+
+	public void setTieneHijos(boolean tieneHijos) {
+		this.tieneHijos = tieneHijos;
+	}
+
 	public boolean isEstaCasado() {
 		return estaCasado;
 	}
@@ -28,17 +38,12 @@ public class Temporario extends Empleado {
 	}
 
 	@Override
-	public double sueldo() {
-		return this.getCantHorasTrabajadas() * 5 + sueldoBasico() + this.bonoFamiliar();
-	}
-
-	@Override
 	public double sueldoBasico() {
-		return 1000;
+		return this.getCantHorasTrabajadas() * 5 + 1000 + this.bonoFamiliar();
 	}
 	
 	private double bonoFamiliar() {
-		if (this.isEstaCasado() || this.getCantHijos() >= 1) {
+		if (this.isEstaCasado() || this.getCantHorasTrabajadas() >= 1) {
 			return 100;
 		} else {
 			return 0;
